@@ -14,9 +14,21 @@ describe('romanToNumber function tests suite', () => {
         })
     })
 
+    describe('case when roman = "IV"', () => {
+        it('should return 4', () => {
+            expect(romanToNumber("IV")).toBe(4);
+        })
+    })
+
     describe('case when roman = "IX"', () => {
         it('should return 9', () => {
             expect(romanToNumber("IX")).toBe(9);
+        })
+    })
+
+    describe('case when roman = "XL"', () => {
+        it('should return 40', () => {
+            expect(romanToNumber("XL")).toBe(40);
         })
     })
 
@@ -26,9 +38,27 @@ describe('romanToNumber function tests suite', () => {
         })
     })
 
+    describe('case when roman = "XC"', () => {
+        it('should return 90', () => {
+            expect(romanToNumber("XC")).toBe(90);
+        })
+    })
+
+    describe('case when roman = "CD"', () => {
+        it('should return 400', () => {
+            expect(romanToNumber("CD")).toBe(400);
+        })
+    })
+
     describe('case when roman = "DCLXVI"', () => {
         it('should return 666', () => {
             expect(romanToNumber("DCLXVI")).toBe(666);
+        })
+    })
+
+    describe('case when roman = "CM"', () => {
+        it('should return 900', () => {
+            expect(romanToNumber("CM")).toBe(900);
         })
     })
 
